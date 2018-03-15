@@ -1,6 +1,9 @@
 package com.zyc.factorydesignpattern.entity;
 
-public class BorrowerB {
+/**
+ * 子类B
+ */
+public class BorrowerB extends Borrower{
     private String id;
 
     private String address;
@@ -29,5 +32,14 @@ public class BorrowerB {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    @Override
+    public String toString() {
+        return "BorrowerB{" +
+                "id='" + id + '\'' +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }
